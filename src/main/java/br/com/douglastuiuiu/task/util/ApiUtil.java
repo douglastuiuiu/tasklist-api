@@ -1,8 +1,8 @@
-package br.com.douglastuiuiu.projectname.util;
+package br.com.douglastuiuiu.task.util;
 
-import br.com.douglastuiuiu.projectname.validation.model.ErrorModel;
-import br.com.douglastuiuiu.projectname.validation.model.FieldErrorResponse;
-import br.com.douglastuiuiu.projectname.validation.util.ValidationUtil;
+import br.com.douglastuiuiu.task.validation.model.ErrorModel;
+import br.com.douglastuiuiu.task.validation.model.FieldErrorResponse;
+import br.com.douglastuiuiu.task.validation.util.ValidationUtil;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -11,7 +11,7 @@ import java.util.List;
 
 
 /**
- * @author diegom
+ * @author douglastuiuiu@gmail.com
  */
 public class ApiUtil {
 

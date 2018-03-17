@@ -1,4 +1,4 @@
-package br.com.douglastuiuiu.projectname.util;
+package br.com.douglastuiuiu.task.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;

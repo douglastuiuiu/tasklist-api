@@ -1,7 +1,7 @@
-package br.com.douglastuiuiu.projectname.validation.model;
+package br.com.douglastuiuiu.task.validation.model;
 
 /**
- * @author diegom
+ * @author douglastuiuiu@gmail.com
  */
 public class FieldErrorResponse {
     private String fieldName;

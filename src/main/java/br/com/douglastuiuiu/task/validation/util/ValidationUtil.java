@@ -1,6 +1,6 @@
-package br.com.douglastuiuiu.projectname.validation.util;
+package br.com.douglastuiuiu.task.validation.util;
 
-import br.com.douglastuiuiu.projectname.validation.model.FieldErrorResponse;
+import br.com.douglastuiuiu.task.validation.model.FieldErrorResponse;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 

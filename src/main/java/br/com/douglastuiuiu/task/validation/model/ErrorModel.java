@@ -1,9 +1,9 @@
-package br.com.douglastuiuiu.projectname.validation.model;
+package br.com.douglastuiuiu.task.validation.model;
 
 /**
  * erro genérico padrão
  *
- * @author diegom
+ * @author douglastuiuiu@gmail.com
  **/
 public class ErrorModel {
     private Object message;

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+    <appender title="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <appender name="file" class="ch.qos.logback.core.FileAppender">
+    <appender title="file" class="ch.qos.logback.core.FileAppender">
         <file>@app.log.path@</file>
         <append>true</append>
         <encoder>
@@ -14,7 +14,7 @@
         </encoder>
     </appender>
 
-    <appender name="gelf" class="me.moocar.logbackgelf.GelfUDPAppender">
+    <appender title="gelf" class="me.moocar.logbackgelf.GelfUDPAppender">
         <remoteHost>192.168.99.193</remoteHost>
         <port>12201</port>
         <encoder class="me.moocar.logbackgelf.GZIPEncoder">
@@ -39,11 +39,11 @@
         </encoder>
     </appender>
 
-    <logger name="org.springframework" level="@spring.log.level@">
+    <logger title="org.springframework" level="@spring.log.level@">
         <appender-ref ref="@spring.log.appender@"/>
     </logger>
 
-    <logger name="br.com.douglastuiuiu" level="@app.log.level@" additivity="false">
+    <logger title="br.com.douglastuiuiu" level="@app.log.level@" additivity="false">
         <appender-ref ref="@app.log.appender@"/>
     </logger>
 

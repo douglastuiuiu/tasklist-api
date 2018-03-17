@@ -1,4 +1,4 @@
-package br.com.douglastuiuiu.projectname.config;
+package br.com.douglastuiuiu.task.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

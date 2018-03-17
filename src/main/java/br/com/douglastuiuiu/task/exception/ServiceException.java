@@ -1,4 +1,4 @@
-package br.com.douglastuiuiu.projectname.exception;
+package br.com.douglastuiuiu.task.exception;
 
 public class ServiceException extends Exception {
     private static final long serialVersionUID = 1L;

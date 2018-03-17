@@ -1,8 +1,8 @@
-package br.com.douglastuiuiu.projectname.resource.handler;
+package br.com.douglastuiuiu.task.resource.handler;
 
-import br.com.douglastuiuiu.projectname.exception.ServiceException;
-import br.com.douglastuiuiu.projectname.util.ApiUtil;
-import br.com.douglastuiuiu.projectname.util.MessageLocale;
+import br.com.douglastuiuiu.task.exception.ServiceException;
+import br.com.douglastuiuiu.task.util.ApiUtil;
+import br.com.douglastuiuiu.task.util.MessageLocale;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.*;
 
 
 /**
- * @author diegom
- *         Interceptor para exceptions
+ * @author douglastuiuiu@gmail.com
+ * Interceptor para exceptions
  */
 @ControllerAdvice(annotations = RestController.class)
 public class ApiValidatorExceptionHandler {
