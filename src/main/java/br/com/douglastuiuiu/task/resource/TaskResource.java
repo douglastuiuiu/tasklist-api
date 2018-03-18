@@ -10,10 +10,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import javax.validation.Valid;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author douglastuiuiu@gmail.com
  */
+@SpringBootApplication
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(origins = "*")

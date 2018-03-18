@@ -65,7 +65,6 @@ public class TaskService {
         List<Task> tasks = new ArrayList();
         Task task = new Task();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-        
         task.setTitle("Gamification");
         task.setDescription("Desenvolver plataforma de gamification para o site da Labelamafia");
         task.setStartDate(LocalDateTime.parse("2016-06-14 09:00:00", formatter));
