@@ -8,7 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+import java.util.List;
 import javax.validation.Valid;
 
 /**
@@ -22,15 +22,22 @@ public class TaskResource {
     @Autowired
     private TaskService taskService;
 
-    @RequestMapping(value = "/v1/task/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<Object> findById(@PathVariable("id") String id) throws ServiceException {
-        Task task = taskService.findById(id);
-        return new ResponseEntity<>(task, HttpStatus.OK);
+    @RequestMapping(value = "/v1/task", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<Object> list() throws ServiceException {
+        List<Task> tasks = taskService.list();
+        return new ResponseEntity<>(tasks, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/v1/task", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<Object> disrruptiveProcess(@Valid @RequestBody Task task) throws ServiceException {
+    public ResponseEntity<Object> save(@Valid @RequestBody Task task) throws ServiceException {
         taskService.save(task);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
+    
+    @RequestMapping(value = "/v1/task/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<Object> delete(@PathVariable("id") String id) throws ServiceException {
+        taskService.delete(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 }
