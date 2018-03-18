@@ -17,16 +17,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>ch.qos.logback</groupId>
-					<artifactId>logback-classic</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>ch.qos.logback</groupId>
-					<artifactId>logback-core</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 		<!-- Setup Spring MVC & REST, use Embedded Tomcat -->
@@ -55,24 +45,6 @@
 			<version>6.0.5</version>
 		</dependency>
 
-		<!-- logging -->
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>${logback.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-core</artifactId>
-			<version>${logback.version}</version>
-		</dependency>
-		<!-- logback / gelf -->
-		<dependency>
-			<groupId>me.moocar</groupId>
-			<artifactId>logback-gelf</artifactId>
-			<version>${gelf.version}</version>
-		</dependency>
-
 		<!-- tests -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -84,8 +56,6 @@
 	<properties>
 		<java.level>1.8</java.level>
 		<sourceEncoding>utf-8</sourceEncoding>
-		<logback.version>1.1.6</logback.version>
-		<gelf.version>0.3</gelf.version>
 	</properties>
 
 	<profiles>
